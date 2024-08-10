@@ -1,9 +1,10 @@
 # ejercicio para practicar python
 
+#FORMA RECURSIVA DE REALIZAR EL PROYECTO
 def sumNum(num):
-    total = 0
-    for i in range(1,num + 1):
-        total += i
-    return total
+    if num == 1:
+        return 1
+    else:
+        return num + sumNum(num - 1)
 
 print(sumNum(10))
